@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/* css document */
+.desktop1 {
+    position: absolute;
+    width: 1440px;
+    height: 1024px;
+    background: #FFFFFF;
+}
+
+.retangulo1 {
+    position: absolute;
+    width: 1600px;
+    height: 751px;
+    left: 139px;
+    top: 136px;
+    background: #008000;
+    border-radius: 40px;
+}
+
+.retangulo2 {
+    position: absolute;
+    width: 480px;
+    height: 560px;
+    left: 90%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 10px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+
+}
+.img {
+    position: absolute;
+    left: -150%;
+    top: 50%
+    translate(-50%, -50%);
+}
+.cadastrar {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 151px;
+    height: 53px;
+    left: 35%;
+    top: 80%;   
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    border: 1px solid #1C5EB9;
+    border-radius: 20px;
+}

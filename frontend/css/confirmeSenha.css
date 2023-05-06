@@ -1,0 +1,97 @@
+.group4 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.input4 {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;    
+    display: block;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #315cfd;
+    background: transparent;
+}
+
+.input4:focus {
+    outline: none;
+}
+
+label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.input4:focus~label,
+.input4:valid~label {
+    top: -20px;
+    font-size: 14px;
+    color: #5264AE;
+}
+
+.bar4 {
+    position: relative;
+    display: block;
+    width: 200px;
+}
+
+.bar4:before,
+.bar4:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #315cfd;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar4:before {
+    left: 50%;
+}
+
+.bar4:after {
+    right: 50%;
+}
+
+.input4:focus~.bar4:before,
+.input4:focus~.bar4:after {
+    width: 50%;
+}
+
+.highlight4 {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.input4:focus~.highlight4 {
+    animation: inputHighlighter 0.3s ease;
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
