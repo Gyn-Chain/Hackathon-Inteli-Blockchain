@@ -1,6 +1,6 @@
 .card {
     width: 300px;
-    height: 110px;
+    height: 70px;
     padding: 0rem;
     background: rgba(198, 198, 198, 0);
     border-radius: 20px;
@@ -12,14 +12,14 @@
     overflow: hidden;
     color: white;
     margin: 0 auto;
-    transform: translate(-39%);
+    transform: translate(-100%);
   }
   
   .card:hover {
     width: 300px;
-    height: 130px;
+    height: 90px;
     transform: skew(0deg);
-    transform: translate(-39%);
+    transform: translate(-100%, 0%);
   }
   
   .align {
