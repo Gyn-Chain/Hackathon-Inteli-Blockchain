@@ -2,12 +2,11 @@
     width: 300px;
     height: 110px;
     padding: 0rem;
-    background: rgba(198, 198, 198, 0.34);
+    background: rgba(198, 198, 198, 0);
     border-radius: 20px;
     backdrop-filter: blur(100px);
     border-bottom: 0px solid rgba(255, 255, 255, 0.440);
     border-left: 0px  rgba(255, 255, 255, 0.545) outset;
-    box-shadow: -40px 50px 30px rgba(0, 0, 0, 0.280);
     transform: skewX(0deg);
     transition: .3s;
     overflow: hidden;

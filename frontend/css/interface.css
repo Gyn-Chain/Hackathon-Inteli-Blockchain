@@ -35,12 +35,19 @@
     border-radius: 20px;
 
 }
+.img2{
+    position: absolute;
+    left: -140%;
+    top:25%;
+    translate:(-50%, -50%);
+}
 .img {
     position: absolute;
     left: -150%;
     top: 50%
     translate(-50%, -50%);
 }
+
 .cadastrar {
     box-sizing: border-box;
 
