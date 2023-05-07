@@ -1,36 +1,23 @@
 .barra1 {
-    position: absolute;
+    position: relative;
     width: 243px;
     height: 16px;
-    left: 375px;
-    top: 1451px;
-
     background: #184A10;
     border-radius: 40px;
+    left: 25%;
+    
 }
 
 .barra2 {
-    position: absolute;
+    position: relative;
     width: 468px;
     height: 16px;
-    left: 535px;
-    top: 1514px;
-
+    left: 40%;
     background: #184A10;
     border-radius: 40px;
 }
 
 .iconeLogo {
-    position: absolute;
-    left: 50%;
-    top: 1648px;
-}
-
-.header {
-    position: absolute;
-    height: 803px;
-    left: 0%;
-    right: 0%;
-    top: 0px;
-    background: #008000;
+    position: relative;
+    left: 49%;
 }
