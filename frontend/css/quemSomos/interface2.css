@@ -2,9 +2,7 @@
     position: relative;
     width: 243px;
     height: 16px;
-    left: 375px;
-    top: 1451px;
-
+    transform: translate(110%);
     background: #184A10;
     border-radius: 40px;
 }
@@ -13,24 +11,12 @@
     position: relative;
     width: 468px;
     height: 16px;
-    left: 535px;
-    top: 1514px;
-
+    transform: translate(108%);
     background: #184A10;
     border-radius: 40px;
 }
 
 .iconeLogo {
     position: relative;
-    left: 50%;
-    top: 1648px;
-}
-
-.header {
-    position: relative;
-    height: 803px;
-    left: 0%;
-    right: 0%;
-    top: 0px;
-    background: #008000;
+    left: 48%;
 }

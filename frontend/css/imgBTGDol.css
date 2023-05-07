@@ -1,0 +1,6 @@
+.BTGDol {
+    transform: skewX(-10deg);
+    width: 25px;
+    height: 20px;
+    transform: translate(10%, 120%);
+}

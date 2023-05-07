@@ -3,8 +3,8 @@
     line-height: 60px;
     align-items: center;
     position: relative;
-    width: 400px;
-    transform: translate(0, 50%);
+    width: 600px;
+    transform: translate(38%, 50%);
 }
 
 .input {
