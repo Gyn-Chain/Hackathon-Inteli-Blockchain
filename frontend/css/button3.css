@@ -1,39 +1,21 @@
 .button3 {
-    font-size: 1.7em;
-    font-weight: 550;
-    color: #e1e1e1;
-    font-family: inherit;
-    cursor: pointer;
-    position: relative;
-    border: none;
-    background: none;
-    text-transform: uppercase;
-    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-    transition-duration: 400ms;
-    transition-property: color;
-  }
-  
-  .button3:focus,
-  .button3:hover {
-    color: #fff;
-  }
-  
-  .button3:focus:after,
-  .button3:hover:after {
-    width: 100%;
-    left: 0%;
-  }
-  
-  .button3:after {
-    content: "";
-    pointer-events: none;
-    bottom: -2px;
-    left: 50%;
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background-color: #fff;
-    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-    transition-duration: 400ms;
-    transition-property: width, left;
-  }
+  width: 150px;
+  height: 60px;
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+  transition: all 0.8s;
+  cursor: pointer;
+  background: white;
+  font-size: 1em;
+  font-weight: 550;
+  font-family: 'Montserrat', sans-serif;
+  transform: translate(37%, -40%);
+}
+
+.button3:hover {
+  width: 150px;
+  height: 60px;
+  background: #315cfd;
+  color: white;
+  font-size: 1em;
+}

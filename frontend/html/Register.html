@@ -1,54 +1,68 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=100">
+    <title>SAP - Register</title>
     <link rel="stylesheet" href="../css/interface.css">
-    <link rel="stylesheet" href="../css/nomeUsuario.css">
     <link rel="stylesheet" href="../css/email.css">
-    <link rel="stylesheet" href="../css/senha.css">
-    <link rel="stylesheet" href="../css/confirmeSenha.css">
-    <link rel="stylesheet" href="../css/cadatar.css">
+    <link rel="stylesheet" href="../css/button.css">
+    <link rel="stylesheet" href="../css/label2.css">
+    <link rel="stylesheet" href="../css/button4.css">
+    <style>
+		body {
+			background-color: #008000;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+    </style>
 </head>
 
 <body>
-    <div class="desktop1">
-
-        <div class="retangulo1"></div>
        
         <div class="retangulo2">
-            <img src="../img/planta_hackathon.png" class="img">
-            <button class="btn"> CADASTRAR
-            </button>           
+            <img src="../img/planta_hackathon.png" class="img">         
             <form>
+                <label class="label2"><h1>Cadastrar</h1></label>
+                <br>
+                <br>
+                <br>
+                <br>
                 <div class="group">
-                    <input required="" type="text" class="input">
+                    <input required="" id="emailUser" name="emailUser" type="text" class="input">
                     <span class="highlight"></span>
                     <span class="bar"></span>
                     <label>Seu Email</label>
                 </div>
                 <br>
-                <div class="group2">
-                    <input required="" type="text" class="input2">
-                    <span class="highlight2"></span>
-                    <span class="bar2"></span>
+                <br>
+                <div class="group">
+                    <input required="" id="nameUser" name="nameUser" type="text" class="input">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
                     <label>Seu Nome Completo</label>
                 </div>
                 <br>
-                <div class="group3">
-                    <input required="" type="password" class="input3">
-                    <span class="highlight3"></span>
-                    <span class="bar3"></span>
+                <br>
+                <div class="group">
+                    <input required="" id="passwordUser" name="passwordUser" type="password" class="input">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
                     <label>Sua Senha</label>
                 </div>
                 <br>
-                <div class="group4">
-                    <input required="" type="password" class="input4">
-                    <span class="highlight4"></span>
-                    <span class="bar4"></span>
+                <br>
+                <div class="group">
+                    <input required="passwordUser" type="password" class="input">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
                     <label>Confirme sua Senha</label>
                 </div>
+                <button class="button"> CONTINUAR</button>
+                <br>
+                <br>
+                <button class="button4"> METAMASK</button>  
             </form>
         </div>
 </body>
