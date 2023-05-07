@@ -8,7 +8,7 @@ Neste repositório serão concentradas todas as informações necessárias relac
 
 # Nossa equipe 
 - <a href="https://www.linkedin.com/in/heitorprudente/">Heitor Prudente</a>
-- <a href="https://www.linkedin.com/in/marcelomiguelassis/">Marcelo Miguek</a>
+- <a href="https://www.linkedin.com/in/marcelomiguelassis/">Marcelo Miguel</a>
 - <a href="https://www.linkedin.com/in/mateus-mar%C3%A7al-212953264/">Mateus Marçal</a>
 
 # Organização
