@@ -1,5 +1,5 @@
 .sigla {
-    position: absolute;
+    position: relative;
     width: 1135px;
     height: 298px;
     left: 20%;
@@ -9,7 +9,7 @@
 
 
 .descricao {
-    position: absolute;
+    position: relative;
     width: 611px;
     height: 430px;
     left: 15%;

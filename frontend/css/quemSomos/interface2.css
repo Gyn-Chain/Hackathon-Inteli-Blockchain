@@ -1,5 +1,5 @@
 .barra1 {
-    position: absolute;
+    position: relative;
     width: 243px;
     height: 16px;
     left: 375px;
@@ -10,7 +10,7 @@
 }
 
 .barra2 {
-    position: absolute;
+    position: relative;
     width: 468px;
     height: 16px;
     left: 535px;
@@ -21,13 +21,13 @@
 }
 
 .iconeLogo {
-    position: absolute;
+    position: relative;
     left: 50%;
     top: 1648px;
 }
 
 .header {
-    position: absolute;
+    position: relative;
     height: 803px;
     left: 0%;
     right: 0%;
