@@ -2,22 +2,35 @@
     position: relative;
     width: 243px;
     height: 16px;
+    left: 375px;
+    top: 1451px;
+
     background: #184A10;
     border-radius: 40px;
-    left: 25%;
-    
 }
 
 .barra2 {
     position: relative;
     width: 468px;
     height: 16px;
-    left: 40%;
+    left: 535px;
+    top: 1514px;
+
     background: #184A10;
     border-radius: 40px;
 }
 
 .iconeLogo {
     position: relative;
-    left: 49%;
+    left: 50%;
+    top: 1648px;
+}
+
+.header {
+    position: relative;
+    height: 803px;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+    background: #008000;
 }

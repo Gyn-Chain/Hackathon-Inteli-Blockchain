@@ -1,5 +1,9 @@
 .sigla {
     position: relative;
+    width: 1135px;
+    height: 298px;
+    left: 20%;
+    top: 326px;
 
 }
 
@@ -8,13 +12,16 @@
     position: relative;
     width: 611px;
     height: 430px;
+    left: 15%;
+    top: 115%;
+
     font-family: 'Fira Sans';
     font-style: normal;
     font-weight: 530;
     font-size: 36px;
     line-height: 48px;
+
     color: #184A10;
-    transform: translate(20%, 20%);
 }
 
 @font-face {
