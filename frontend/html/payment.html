@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SAP - Sua plataforma para o agronegócio</title>
-  <link rel="stylesheet" href="/sap.css">
   <link rel="stylesheet" href="/button2.css">
   <link rel="stylesheet" href="/button3.css">
   <link rel="stylesheet" href="/logo.css">
   <link rel="stylesheet" href="/search.css">
   <link rel="stylesheet" href="/logotext.css">
   <link rel="stylesheet" href="/button5.css">
-  <link rel="stylesheet" href="/header.css">
   <link rel="stylesheet" href="/button7.css">
   <link rel="stylesheet" href="/picProduct.css">
   <link rel="stylesheet" href="/imgBTGDol.css">
@@ -66,11 +65,13 @@
       margin-bottom: 10px;
       text-align: center;
     }
+
     .container {
-            display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-        }
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
     /* estilo para as descrições dos produtos */
     .product-description {
       font-size: 14px;
@@ -86,6 +87,7 @@
     }
   </style>
 </head>
+
 <body>
   <header>
     <div class="card">
@@ -95,39 +97,76 @@
       </div>
     </div>
     <div>
-        <a href="sobreNos.html"><button class="button5">Sobre nós</button></a>
+      <a href="sobreNos.html"><button class="button5">Sobre nós</button></a>
     </div>
     <div>
       <a href=""><button class="button2">Carrinho</button></a>
     </div>
     <div>
-      <a href="Register.html"><button class="button3">Sua conta</button></a>
+      <button id="metaMesk" class="button3">Sua conta</button>
     </div>
   </header>
   <main>
     <div>
-        <div class="container">
-            <div class="product-card">
-                <img src="/soja-Hackathon.jpg" class="picProduct">
-                <h1>Saca de soja</h1>
-                <h2>50 Sacas</h2>
-                <div class="container"><h2>1200 </h2><img class="BTGDol" src="/BTGDol.png"></div>
-            </div>
-            <a><button class="button7" onclick="{metamesk}">Confirmar compra</button></a>
-            </div>
+      <div class="container">
+        <div class="product-card">
+          <img src="/soja-Hackathon.jpg" class="picProduct">
+          <h1>Saca de soja</h1>
+          <h2>50 Sacas</h2>
+          <div class="container">
+            <h2>1200 </h2><img class="BTGDol" src="/BTGDol.png">
           </div>
+        </div>
+        <a><button class="button7" id="sendMetaMesk">Confirmar compra</button></a>
+      </div>
     </div>
-    <script>
-      function metamesk() {
-    window.ethereum.request({ method: 'eth_accounts' })
-    .then(console.log(accounts[0]))
-    .catch((err) => {
-      console.error(err);
-    });
-}
-    </script>
-    
+    </div>
+
   </main>
+  <script type="text/javascript">
+    let account;
+
+    document.getElementById('metaMesk').addEventListener('click', event => {
+      let button = event.target;
+      ethereum.request({ method: 'eth_requestAccounts' }).then(accounts => {
+        account = accounts[0];
+        console.log(account);
+        button.textContent += ":Conectada"
+
+        ethereum.request({ method: 'eth_getBalance', params: [account, 'latest'] }).then(result => {
+          console.log(result);
+          let wei = parseInt(result, 16);
+          let balance = wei / (10 ** 18)
+          console.log(balance + "eth");
+        });
+      });
+    });
 
 
-    
+      document.getElementById('sendMetaMesk').addEventListener('click', event => {
+        let transactionParam = {
+          to: '0xDABe7b244CAfd1db095dF1a657E8b906c2F83030',
+          from: account,
+          value: '5AF3107A4000'
+        };
+
+        ethereum.request({ method: 'eth_sendTransaction', params: [transactionParam] }).then(txhash => {
+          console.log(txhash);
+          checkTransactionConfimation(txhash).then(r => alert(r));
+        });
+      });
+
+
+    function checkTransactionConfimation(txhash) {
+      let checkTransactionLoop = () => {
+        return ethereum.request({ method:'eth_getTransactionReceipt', params:[txhash]}).then(r =>{
+          if(r != null) return 'Deu Certo';
+          else return checkTransactionLoop();
+        });
+      };
+
+      return checkTransactionLoop();
+    }
+
+  </script>
+</body>
